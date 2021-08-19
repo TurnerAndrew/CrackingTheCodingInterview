@@ -10,11 +10,11 @@
         //Nested for loops
             //Iterate over the string
             //Iterate again for each subsequent letter comparing it to the first
+            //O(n^2)
         
             const isUnique = (str) => {
                 for(let i = 0; i < str.length; i++){
                     for(let j = i + 1; j < str.length; j ++){
-                        console.log(str[i], str[j])
                         if (str[i] === str[j]){
                             return false
                         }
@@ -27,6 +27,7 @@
             //loop over the string and check if the object contains that character as a key
             //if the key exists, return false the letter is already in the string
             //if the key doesn't exist add it to the object and move to the next character
+            //O(n)
 
             const isUnique = (str) => {
                 let counter = {}
